@@ -1,0 +1,23 @@
+<p>
+    <!-- {{title}} -->
+
+    <input style = "color:hwb(162 8% 19%);
+                    font-size:larger;
+            		margin-top: 40px;
+				margin-left: 100px;"
+[value]='title'>
+<br/>
+
+<button [disabled]="buttonStatus">First Button</button>
+<br/>
+<br/>
+<button (click)="buttonClick()">Second Button</button>
+
+
+    <!-- Bind button disabled state to `isUnchanged` property
+<button type="button" [disabled]="isUnchanged">Disabled Button</button> -->
+
+    <!-- <img src="{{componylogo}}">
+    <img [src]="componylogo">
+    <img bind-src="componylogo"> -->
+</p>
