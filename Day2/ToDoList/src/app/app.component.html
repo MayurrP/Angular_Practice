@@ -1,0 +1,18 @@
+<h2>{{title}}</h2>
+
+<div>
+  <ul name="">
+      <li *ngFor = "let task of tasks">{{task}}
+        <button (click)="editTask(task)">Edit</button>
+      <button (click)="deleteTask(task)">Delete</button></li>
+      
+  </ul>
+</div>
+
+<h2>Add New Task</h2>
+<input type="text" [(ngModel)]="newTask">
+<button (click)="addTask()">Add</button>
+<br>
+
+<router-outlet></router-outlet>
+

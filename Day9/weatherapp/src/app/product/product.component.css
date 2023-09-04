@@ -1,0 +1,80 @@
+table,tr,td{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search-img{
+    width: 15px;
+    height: 15px;
+}
+
+.topsearch {
+    color: White;
+    background-color: rgb(135, 135, 152);
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+form button {
+    color: white;
+    background-color: green
+}
+
+tr{
+    border: 2px solid rgba(224, 109, 109, 0.123);
+}
+.product-title :hover{
+    color: rgb(167, 14, 205);
+
+}
+/* .product-title :focus{
+    color: rgb(49, 222, 81);
+
+} */
+.products-header:hover{
+    color: rgb(255, 251, 0);
+}
+
+.products-header{
+    color: rgb(226, 245, 245);
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.image-small{
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    padding: 7px;
+    border-radius: 5px;
+}
+.image-small:hover{
+    border-color: red;
+}
+
+.image-medium:hover{
+    border-color: rgb(0, 238, 255);
+    opacity: 0.6;
+}
+
+.image-medium{
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid  rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+
+}
+/* .image-medium:hover{
+
+} */
+.price{
+    color: rgb(19, 113, 151);
+}
+.rate{
+    color:red;
+}
+

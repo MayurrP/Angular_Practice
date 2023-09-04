@@ -1,0 +1,24 @@
+<div class="products-list">
+    <h1 class="products-header">Available Products</h1>
+    <div class="container">
+        <div class="topsearch">
+        <form >
+            <input type="search" name="search" id="search" [(ngModel)]="findProduct" placeholder="Search Product" />
+            <button (click)="searchProduct()">Search</button>
+        </form>
+        </div>
+        </div>
+        {{productdata.title}}
+        
+
+<table>
+    <tr *ngFor="let product of products">
+        <td><img [src]="product.imgurl" class="image-small"/></td>
+        <td><img [src]="product.imgurl" class="image-medium"/></td>
+        <td>
+            <div class="product-title"><h1>{{product.title}}</h1></div>
+            <h2 class="price">Price : {{ product.price | currency : "INR" : true}}</h2>
+        </td>
+    </tr>
+</table>
+</div>

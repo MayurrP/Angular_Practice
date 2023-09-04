@@ -1,0 +1,19 @@
+<div class="container">
+	<h3>Contact Form</h3>
+	<form action="#" name="contact_form">
+		<label for="first_name">First Name</label>
+		<input name="first_name" type="text" required placeholder="John" [(ngModel)]="firstName"/>
+		<br>
+		<label for="last_name">Last Name</label>
+		<input name="last_name" type="text" required placeholder="Doe" [(ngModel)]="lastName"/>
+		<br>
+		<label for="email">Email</label>
+		<input name="email" type="email" required placeholder="you@domain.com" [(ngModel)]="email"/>
+		<br>
+		<label for="message">Message</label><br>
+		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required [(ngModel)]="firstName"> </textarea>
+		<div class="center">
+            <button class="btn btn-primary" (click)="submit()">Submit</button>
+        </div>
+	</form>	
+</div>

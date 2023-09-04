@@ -1,0 +1,36 @@
+<form #signupForm="ngForm">
+    <fieldset>
+    <legend> Student Registrtion </legend>
+    
+    <div class="form-group">
+    <label for="inputName">Student Name : </label>
+    <input type="text" required [(ngModel)]="studentDetails.name" name="name" placeholder="Student Name">
+    </div>
+    
+    <div class="form-group">
+    <label for="inputPhoneNo">Phone No : </label>
+    <input type="number" required [(ngModel)]="studentDetails.phoneNo" name="phoneNo" placeholder="Phone No">
+    </div>
+  
+    
+    <div class="form-group">
+    <label for="select">Gender:</label>
+    <div *ngFor ="let g of gender">
+    <input type="radio" required [(ngModel)]="studentDetails.gender" name="gender" [value]="g">
+    <label for="inputGender">{{g}}</label>
+</div>
+</div>
+    
+    <div class="form-group checkbox">
+    <label>
+    <input type="checkbox" [(ngModel)]="studentDetails.terms" name="terms">Confirm terms and conditions
+    </label>
+    </div>
+    
+    <div class="form-group">
+    <button type="reset" class="btn btn-default">Cancel</button>
+    <input type="submit" (click)="submitDetails()" class="btn btn-success" [disabled]="!signupForm.valid">
+    </div>
+    
+    </fieldset>
+    </form>

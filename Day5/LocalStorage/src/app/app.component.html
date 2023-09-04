@@ -1,0 +1,24 @@
+<form #loginForm="ngForm">
+  <fieldset>
+  <legend> Login </legend>
+  <br>
+  <div class="form-group">
+      <label for="inputusername">User Name : </label>
+      <input type="text" required [(ngModel)]="user.username" name="username" placeholder="User Name">
+  </div>
+  <br>
+  <div class="form-group">
+      <label for="inputpass">Password : </label>
+      <input type="text" required [(ngModel)]="user.password" name="password" placeholder="Password">
+  </div>
+  <br>  
+  <div class="form-group">
+      <button type="reset" class="btn btn-default">Cancel</button>&nbsp;&nbsp;&nbsp;
+      <input type="submit" (click)="submitDetails()" class="btn btn-success" [disabled]="!loginForm.valid" value="Login">
+      </div>
+      
+  </fieldset>
+
+</form>
+<a routerLink="login">Login</a>
+<router-outlet></router-outlet>

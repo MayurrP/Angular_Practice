@@ -1,0 +1,9 @@
+table, th, td {
+    padding: 10px;
+    border: 1px solid rgb(16, 187, 147);
+    border-collapse: collapse;
+}
+
+h1{
+    color: rgb(215, 128, 14);
+}

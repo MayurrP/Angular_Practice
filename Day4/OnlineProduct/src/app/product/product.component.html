@@ -1,0 +1,14 @@
+<div>
+    <table>
+
+        <tr *ngFor = "let product of products">
+            <td>
+                <img [src]="product.productImg">
+            </td>
+            <td>
+                <h1>{{product.name}}</h1>
+                <h3>{{ product.price | currency : "INR" : true}}</h3>
+            </td>
+        </tr>
+    </table>
+</div>

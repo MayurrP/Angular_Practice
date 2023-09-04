@@ -1,0 +1,51 @@
+
+<h3>Output :</h3>
+<div>
+    <ul style="list-style-type:none;" name="nums">
+        <li *ngFor = "let i of numary">
+            <span *ngIf = "i % 2 == 0;then condition1 else condition2">
+                Condition is valid.</span>
+            <ng-template #condition1>
+             <b>{{i}} is even.</b>  
+            </ng-template>
+            <ng-template #condition2>
+                <b>{{i}} is odd.</b>
+            </ng-template>
+        </li>
+    </ul>
+</div>
+
+
+<!-- <style>
+    table, tr,th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+</style>
+<h1>Phone List</h1>
+
+<div>
+    <table name="day">
+        <tr *ngFor = "let i of phones"><th>{{i}}</th></tr>
+    </table>
+</div> -->
+
+<!-- <div>
+    Days : 
+    <select name="day">
+        <option *ngFor = "let i of days">{{i}}</option>
+    </select>
+</div> -->
+
+<!-- <p>If</p>
+<div>
+    <span *ngIf = "isavailable;then condition1 else condition2">
+        Condition is valid.</span>
+    <ng-template #condition1>
+        Showing 10 elements
+    </ng-template>
+    <ng-template #condition2>
+        Showing 20 elements
+    </ng-template>
+</div> -->

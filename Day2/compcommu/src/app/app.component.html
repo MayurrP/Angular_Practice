@@ -1,0 +1,15 @@
+<div style="text-align: center;">
+{{title}}
+</div>
+
+<h2>Parent App Communication</h2>
+<label>Enter Parent Component Value : </label>
+<input type="text" #pdata (keyup)="0"><br><br>
+<label>Enter Department Name : </label>
+<input type="text" #deptdata (keyup)="0"><br><br>
+<label>Value from the child component is : {{childData}}</label>
+
+<app-product-list (childEvent)="catchChildEvent($event)" [parentData]="pdata.value" [departmentData] ="deptdata.value">
+</app-product-list>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,11 @@
+<h1>Calling Api</h1>
+<table>
+  <tr><th>Id</th>
+  <th>Title</th></tr>
+<tr *ngFor = "let record of posts">
+  <td>{{record.id}}</td>
+  <td>{{record.title}}</td>
+
+</tr>
+</table>
+<router-outlet></router-outlet>
